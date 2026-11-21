@@ -1,6 +1,6 @@
 # Starfall Protocol (playtest builds)
 
-A 2D survivors-like roguelite with loot-driven buildcrafting. Move and dash through an ever-growing swarm while your
+A 2D survivors-like roguelite for Windows and macOS with loot-driven buildcrafting. Move and dash through an ever-growing swarm while your
 weapons fire on their own; every level-up and every decrypted item reshapes the build. Survive 15 minutes, beat the
 Conductor and extract with your Cipher Caches.
 
@@ -8,11 +8,19 @@ This is an early playtest build. Feedback is very welcome.
 
 ## Download
 
-Get the latest `StarfallProtocol-windows.zip` from **[Releases](../../releases/latest)**, unzip it anywhere and run
-`StarfallProtocol.exe`. Windows 10/11, 64-bit. The game is not code-signed, so Windows SmartScreen may warn you:
-click **More info → Run anyway**.
+Get the latest build from **[Releases](../../releases/latest)**:
 
-Your save is stored in `%APPDATA%\Godot\app_userdata\Starfall Protocol\`.
+**Windows** (10/11, 64-bit): download `StarfallProtocol-windows.zip`, unzip it anywhere and run `StarfallProtocol.exe`.
+The game is not code-signed, so Windows SmartScreen may warn you: click **More info → Run anyway**.
+
+**macOS** (11 Big Sur or newer; Apple Silicon M1/M2/M3/M4 and Intel): download `StarfallProtocol-macos.zip`, unzip it
+and move `Starfall Protocol.app` to Applications. The app isn't registered with Apple, so the first launch is blocked:
+1. Double-click the app and close the warning ("Apple could not verify…").
+2. Open **System Settings → Privacy & Security**, scroll down and click **Open Anyway** next to Starfall Protocol.
+3. Confirm with **Open** (and your password if asked). After that it opens normally.
+
+Your save is stored in `%APPDATA%\Godot\app_userdata\Starfall Protocol\` (Windows) or
+`~/Library/Application Support/Godot/app_userdata/Starfall Protocol/` (macOS).
 
 ## Controls
 
@@ -31,7 +39,8 @@ Weapons, grenade and melee fire automatically.
 
 ## Reporting a bug or crash
 
-The game writes a log of every session. After a bug or crash, open this folder (paste it into the Explorer address bar):
+The game writes a log of every session. After a bug or crash, open this folder. On Windows, paste it into the Explorer
+address bar:
 
 ```
 %APPDATA%\Godot\app_userdata\Starfall Protocol\logs
@@ -40,7 +49,7 @@ The game writes a log of every session. After a bug or crash, open this folder (
 `godot.log` is the latest session, and the timestamped files are older ones (the 10 newest are kept). Attach the log of
 the session with the problem to an [issue](../../issues), with a line on what you were doing. The log holds the
 build version, your OS, CPU and graphics card, each run's map seed, level-up picks and how the run ended, plus any
-errors. A crash report can also show the folder the game runs from, which may include your Windows user name.
+errors. A crash report can also show the folder the game runs from, which may include your user name.
 
 ## Feedback
 
