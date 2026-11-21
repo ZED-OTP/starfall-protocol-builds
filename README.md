@@ -29,6 +29,19 @@ Your save is stored in `%APPDATA%\Godot\app_userdata\Starfall Protocol\`.
 
 Weapons, grenade and melee fire automatically.
 
+## Reporting a bug or crash
+
+The game writes a log of every session. After a bug or crash, open this folder (paste it into the Explorer address bar):
+
+```
+%APPDATA%\Godot\app_userdata\Starfall Protocol\logs
+```
+
+`godot.log` is the latest session, and the timestamped files are older ones (the 10 newest are kept). Attach the log of
+the session with the problem to an [issue](../../issues), with a line on what you were doing. The log holds the
+build version, your OS, CPU and graphics card, each run's map seed, level-up picks and how the run ended, plus any
+errors. A crash report can also show the folder the game runs from, which may include your Windows user name.
+
 ## Feedback
 
 Open an [issue](../../issues) or tell me directly. Most useful: what confused you in the first minute, why you died,
