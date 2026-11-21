@@ -1,7 +1,7 @@
 # Starfall Protocol (playtest builds)
 
-A 2D survivors-like roguelite for Windows and macOS with loot-driven buildcrafting. Move and dash through an ever-growing swarm while your
-weapons fire on their own; every level-up and every decrypted item reshapes the build. Survive 15 minutes, beat the
+A 2D survivors-like roguelite with loot-driven buildcrafting, for Windows and macOS. Move and dash through an
+ever-growing swarm while your weapons fire on their own; every level-up and every decrypted item reshapes the build. Survive 15 minutes, beat the
 Conductor and extract with your Cipher Caches.
 
 This is an early playtest build. Feedback is very welcome.
@@ -44,6 +44,12 @@ address bar:
 
 ```
 %APPDATA%\Godot\app_userdata\Starfall Protocol\logs
+```
+
+On macOS, in Finder choose **Go → Go to Folder…** and paste:
+
+```
+~/Library/Application Support/Godot/app_userdata/Starfall Protocol/logs
 ```
 
 `godot.log` is the latest session, and the timestamped files are older ones (the 10 newest are kept). Attach the log of
